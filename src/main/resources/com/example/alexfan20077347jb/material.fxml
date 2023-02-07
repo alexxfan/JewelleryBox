@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alexfan20077347jb.Controllers.MaterialsController">
+   <top>
+      <Label alignment="CENTER" prefHeight="98.0" prefWidth="279.0" text="Materials" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="170.0" text="Choose an Item of Jewellery" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <ChoiceBox prefHeight="26.0" prefWidth="173.0" fx:id="jewellerychoice" onAction="#selectedJewelleryForMaterial">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <TextField promptText="Name/Type" fx:id="nametype">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField promptText="Description/Information" fx:id="description">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField promptText="Amount/Quantity/Weight" fx:id="weightamountquantity">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField promptText="Quality" fx:id="quality">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Add" onAction="#addMaterial">
+               <HBox.margin>
+                  <Insets left="100.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Delete" onAction="#deleteMaterial">
+               <HBox.margin>
+                  <Insets left="300.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ListView fx:id="materialList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,315 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.ChoiceBox?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.ListView?>-->
+<!--<?import javafx.scene.control.Tab?>-->
+<!--<?import javafx.scene.control.TabPane?>-->
+<!--<?import javafx.scene.control.TextField?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.layout.BorderPane?>-->
+<!--<?import javafx.scene.layout.HBox?>-->
+<!--<?import javafx.scene.layout.VBox?>-->
+<!--<?import javafx.scene.text.Font?>-->
+
+<!--<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alexfan20077347jb.Controllers.DisplayCaseController">-->
+<!--    <tabs>-->
+<!--        <Tab text="Display Cases">-->
+<!--            <content>-->
+<!--                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">-->
+<!--                    <children>-->
+<!--                        <BorderPane layoutX="2.0" layoutY="6.0" prefHeight="564.0" prefWidth="600.0">-->
+<!--                            <top>-->
+<!--                                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="102.0" prefWidth="599.0" text="DISPLAY CASES">-->
+<!--                                            <font>-->
+<!--                                                <Font size="43.0" />-->
+<!--                                            </font>-->
+<!--                                        </Label>-->
+<!--                                    </children>-->
+<!--                                </HBox>-->
+<!--                            </top>-->
+<!--                            <bottom>-->
+<!--                                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <Button mnemonicParsing="false" text="Add" onAction="#addDisplayCase">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="100.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                        <Button mnemonicParsing="false" text="Delete" onAction="#deleteDisplayCase">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="125.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                        <Button mnemonicParsing="false" text="Clear" onAction="#clearDisplayCaseList">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="150.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                    </children>-->
+<!--                                </HBox>-->
+<!--                            </bottom>-->
+<!--                            <left>-->
+<!--                                <VBox prefHeight="364.0" prefWidth="170.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <TextField promptText="Case Name" fx:id="caseName">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Case Number" fx:id="caseNumber">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Case Style" fx:id="caseType">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Case Lighting" fx:id="caseLighting">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                    </children>-->
+<!--                                </VBox>-->
+<!--                            </left>-->
+<!--                            <center>-->
+<!--                                <ListView fx:id="cases" prefHeight="364.0" prefWidth="530.0" BorderPane.alignment="CENTER" />-->
+<!--                            </center>-->
+<!--                        </BorderPane>-->
+<!--                    </children></AnchorPane>-->
+<!--            </content>-->
+<!--        </Tab>-->
+<!--        <Tab text="Display Trays">-->
+<!--            <content>-->
+<!--                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">-->
+<!--                    <children>-->
+<!--                        <BorderPane layoutX="1.0" prefHeight="572.0" prefWidth="600.0">-->
+<!--                            <top>-->
+<!--                                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="102.0" prefWidth="599.0" text="DISPLAY TRAYS" textAlignment="CENTER">-->
+<!--                                            <font>-->
+<!--                                                <Font size="43.0" />-->
+<!--                                            </font>-->
+<!--                                        </Label>-->
+<!--                                    </children>-->
+<!--                                </HBox>-->
+<!--                            </top>-->
+<!--                            <bottom>-->
+<!--                                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <Button mnemonicParsing="false" text="Add">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="100.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                        <Button mnemonicParsing="false" text="Delete">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="125.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                        <Button mnemonicParsing="false" text="Clear">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="150.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                    </children>-->
+<!--                                </HBox>-->
+<!--                            </bottom>-->
+<!--                            <left>-->
+<!--                                <VBox prefHeight="364.0" prefWidth="170.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <ChoiceBox prefHeight="26.0" prefWidth="171.0" fx:id="casechoice">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </ChoiceBox>-->
+<!--                                        <TextField promptText="Tray Identifier">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Tray Inlay Colour">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Tray Dimensions">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                    </children>-->
+<!--                                </VBox>-->
+<!--                            </left>-->
+<!--                            <center>-->
+<!--                                <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />-->
+<!--                            </center>-->
+<!--                        </BorderPane>-->
+<!--                    </children></AnchorPane>-->
+<!--            </content>-->
+<!--        </Tab>-->
+<!--        <Tab text="Jewellery">-->
+<!--            <content>-->
+<!--                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">-->
+<!--                    <children>-->
+<!--                        <BorderPane layoutX="2.0" layoutY="6.0" prefHeight="564.0" prefWidth="600.0">-->
+<!--                            <top>-->
+<!--                                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="102.0" prefWidth="599.0" text="JEWELLERY">-->
+<!--                                            <font>-->
+<!--                                                <Font size="43.0" />-->
+<!--                                            </font>-->
+<!--                                        </Label>-->
+<!--                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="181.0" text="View All">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets top="60.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                    </children>-->
+<!--                                </HBox>-->
+<!--                            </top>-->
+<!--                            <bottom>-->
+<!--                                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <Button mnemonicParsing="false" text="Add">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="100.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                        <Button mnemonicParsing="false" text="Delete">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="125.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                        <Button mnemonicParsing="false" text="Clear">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="150.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                    </children>-->
+<!--                                </HBox>-->
+<!--                            </bottom>-->
+<!--                            <left>-->
+<!--                                <VBox prefHeight="364.0" prefWidth="170.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <ChoiceBox prefHeight="26.0" prefWidth="172.0">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </ChoiceBox>-->
+<!--                                        <TextField promptText="Item Description">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Target Gender">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Image">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Retail Price">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                    </children>-->
+<!--                                </VBox>-->
+<!--                            </left>-->
+<!--                            <center>-->
+<!--                                <ListView prefHeight="364.0" prefWidth="530.0" BorderPane.alignment="CENTER" />-->
+<!--                            </center>-->
+<!--                        </BorderPane>-->
+<!--                    </children></AnchorPane>-->
+<!--            </content>-->
+<!--        </Tab>-->
+<!--        <Tab text="Materials">-->
+<!--            <content>-->
+<!--                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">-->
+<!--                    <children>-->
+<!--                        <BorderPane layoutX="2.0" layoutY="6.0" prefHeight="564.0" prefWidth="600.0">-->
+<!--                            <top>-->
+<!--                                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="102.0" prefWidth="599.0" text="MATERIALS">-->
+<!--                                            <font>-->
+<!--                                                <Font size="43.0" />-->
+<!--                                            </font>-->
+<!--                                        </Label>-->
+<!--                                    </children>-->
+<!--                                </HBox>-->
+<!--                            </top>-->
+<!--                            <bottom>-->
+<!--                                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <Button mnemonicParsing="false" text="Add">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="100.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                        <Button mnemonicParsing="false" text="Delete">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="125.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                        <Button mnemonicParsing="false" text="Clear">-->
+<!--                                            <HBox.margin>-->
+<!--                                                <Insets left="150.0" top="30.0" />-->
+<!--                                            </HBox.margin>-->
+<!--                                        </Button>-->
+<!--                                    </children>-->
+<!--                                </HBox>-->
+<!--                            </bottom>-->
+<!--                            <left>-->
+<!--                                <VBox prefHeight="364.0" prefWidth="170.0" BorderPane.alignment="CENTER">-->
+<!--                                    <children>-->
+<!--                                        <ChoiceBox prefHeight="26.0" prefWidth="170.0">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </ChoiceBox>-->
+<!--                                        <TextField promptText="Name/Type">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Description">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Quantity/Weight">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                        <TextField promptText="Quality">-->
+<!--                                            <VBox.margin>-->
+<!--                                                <Insets top="40.0" />-->
+<!--                                            </VBox.margin>-->
+<!--                                        </TextField>-->
+<!--                                    </children>-->
+<!--                                </VBox>-->
+<!--                            </left>-->
+<!--                            <center>-->
+<!--                                <ListView prefHeight="364.0" prefWidth="530.0" BorderPane.alignment="CENTER" />-->
+<!--                            </center>-->
+<!--                        </BorderPane>-->
+<!--                    </children></AnchorPane>-->
+<!--            </content>-->
+<!--        </Tab>-->
+<!--    </tabs>-->
+<!--</TabPane>-->
