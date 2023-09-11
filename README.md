@@ -23,3 +23,12 @@ The objective of this project is to create a comprehensive jewellery store manag
 - **Search Functionality**: Allows users to search for jewellery items by text, providing search results with item locations and full descriptions.
 
 - **User Interface**: An interactive JavaFX graphical user interface is implemented to interact with the system.
+
+- ## Setting up
+
+To run the London Underground Route Finder application:
+
+   ```bash
+   git clone https://github.com/alexxfan/JewelleryBox.git
+   cd JewelleryBox
+   java -jar target/JewelleryBox.jar
