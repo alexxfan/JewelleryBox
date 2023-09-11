@@ -26,7 +26,7 @@ The objective of this project is to create a comprehensive jewellery store manag
 
 - ## Setting up
 
-To run the London Underground Route Finder application:
+To run the Jewellery Box application:
 
    ```bash
    git clone https://github.com/alexxfan/JewelleryBox.git
