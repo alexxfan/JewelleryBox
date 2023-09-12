@@ -31,4 +31,5 @@ To run the Jewellery Box application:
    ```bash
    git clone https://github.com/alexxfan/JewelleryBox.git
    cd JewelleryBox
+   mvnw clean verify build
    java -jar target/JewelleryBox.jar
